@@ -1,35 +1,36 @@
 <div class="service">
           <!--BANNER 1-->
-          
+        <div ng-repeat="service in services">          
           <div class="row">
             <div class="col-lg-3">
-                <img src="http://placehold.it/300x300" width="160" height="160" >
+                <img src="{{service.image}}" width="160" height="160" >
             </div>
             <div class="col-lg-8">
-                <h3>Hardware Repair</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam. Labore?</p>
+                <h3>{{service.name}}</h3>
+                <p>{{service.description}}</p>
             </div>
           </div>
+        </div>
           
           <!--BANNER 2-->
           
-          <div class="row">
-            <div class="col-lg-3">
-                <img src="http://placehold.it/300x300" width="160" height="160" >
-            </div>
-            <div class="col-lg-8">
-                <h3>Performance Enhancement</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam. Labore?</p>
-            </div>
-          </div>
+          <!--<div class="row">-->
+          <!--  <div class="col-lg-3">-->
+          <!--      <img src="https://placehold.it/300x300" width="160" height="160" >-->
+          <!--  </div>-->
+          <!--  <div class="col-lg-8">-->
+          <!--      <h3>Performance Enhancement</h3>-->
+          <!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam. Labore?</p>-->
+          <!--  </div>-->
+          <!--</div>-->
           
           <!--BANNER 3-->
-          <div class="row">
-            <div class="col-lg-3">
-                <img src="http://placehold.it/300x300" width="160" height="160" >
-            </div>
-            <div class="col-lg-8">
-                <h3>Tune Up</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam. Labore?</p>
-            </div>
-          </div>
+          <!--<div class="row">-->
+          <!--  <div class="col-lg-3">-->
+          <!--      <img src="https://placehold.it/300x300" width="160" height="160" >-->
+          <!--  </div>-->
+          <!--  <div class="col-lg-8">-->
+          <!--      <h3>Tune Up</h3>-->
+          <!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam. Labore?</p>-->
+          <!--  </div>-->
+          <!--</div>-->

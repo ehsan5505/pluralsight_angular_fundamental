@@ -1,0 +1,26 @@
+[
+    {
+        "id":"1",
+        "name":"Hardware Repair and Maintainance",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam Labore?",
+        "image":"https://placehold.it/300x300"
+    },
+    {
+        "id":"1",
+        "name":"Performance Enhancement",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam Labore?",
+        "image":"https://placehold.it/300x300"
+    },
+    {
+        "id":"1",
+        "name":"TuneUp Performnace",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam Labore?",
+        "image":"https://placehold.it/300x300"
+    },
+    {
+        "id":"1",
+        "name":"Analysis and Monitor the Performance",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, optio quis repellendus architecto veritatis explicabo ad natus a corrupti consectetur temporibus iusto nostrum fuga aspernatur eius laboriosam in veniam Labore?",
+        "image":"https://placehold.it/300x300"
+    }
+]
