@@ -1,0 +1,60 @@
+<!--<?php header('Access-Control-Allow-Origin: *'); ?>-->
+<h1>Indix Page</h1>
+
+<span><button class="btn btn-sm btn-success">Message:{{indix.message}}</button></span>
+<br/>
+<label class="label label-primary">Product get Back: {{indix.result.count}}</label>
+</br>
+
+<div>
+
+        <!--<ul ng-repeat="product in products">-->
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>{{product.title}}</h1>
+            <table class="row table table-hover">
+                <thead>
+                    <th>Key</th>
+                    <th>Value</th>
+                </thead>
+                <tbody>
+                <tr ng-repeat="(k,v) in product">
+                    <td class="col-sm-6">{{k}}</td>
+                    <td class="col-sm-6">{{v}}</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <img class="col-sm-4 img img-responsive img-thumbnail" src="{{product.imageUrl}}" width="200" height="200" />
+        </div>
+            
+        <!--</ul>-->
+        <!--</div>-->
+        <!--        {{attributes}}-->
+        <div class="row">
+            <h1>Detail Specification</h1>
+            <label class="text-primary">Status: {{detail.message}}</label>
+            
+            <table class="table table-hover table-stripped">
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="(key, value) in attributes">
+                        <td>{{key}}</td>
+                        <td>
+                        <span ng-repeat="val in value">{{val}}</span>
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+        </div>        
+                
+                
+    </div>
+<!--</div>-->

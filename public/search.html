@@ -1,0 +1,71 @@
+<h1>Search in Index</h1>
+
+<label class="text-secondary">Search By UPC</label>
+<form novalidate class="css-form">
+    UPC: <input type="text" ng-model="upc" required placeholder="UPC code, i.e. 744868192061" />
+    <!--E-mail: <input type="email" ng-model="user.email" required /><br />-->
+    <!--Gender: <input type="radio" ng-model="user.gender" value="male" />male-->
+    <!--<input type="radio" ng-model="user.gender" value="female" />female<br />-->
+    <!--<input type="button" ng-click="reset()" value="Reset" />-->
+    <input class="btn btn-primary" type="submit" ng-click="searchByUPC(upc)" value="Search" />
+  </form>
+
+  
+<label class="text-secondary">Search By Store</label>
+<form novalidate class="css-form">
+    <div class="form-group">
+    Product Keyword:<input type="text" ng-model="mfgNum" required placeholder="iphone6" />
+    Store Name: <input type="text" ng-model="mfg" required placeholder="Enter Store Name i.e. Amazon" />
+     <input class="btn btn-primary" type="submit" ng-click="searchByStore(mfg,mfgNum)" value="Search" />
+     </div>
+</form>
+  
+<label class="text-secondary">Search By Brand</label>
+<form novalidate class="css-form">
+    Product: <input type="text" ng-model="q" required placeholder="i.e. Keyword" />
+    Manufacturer Name:<input type="text" ng-model="manu" require placeholder="Adidas" />
+     <input class="btn btn-primary" type="submit" ng-click="searchByMfg(q,manu)" value="Search" />
+</form>
+  
+<label class="text-secondary">Search By Keyword</label>
+<form novalidate class="css-form">
+    Keyword: <input type="text" ng-model="key" required placeholder="Type the Keyword" />
+     <input class="btn btn-primary" type="submit" ng-click="searchByKEY(key)" value="Search" />
+</form>
+  
+<h3>Result</h3>
+  <div class="panel">
+      
+      <!--debug-->
+      <!--{{show}} -->
+      <!--/debug-->
+      
+      <ul class="list-group" ng-show="hideSearch" ng-repeat="store in stores">
+          <a class="list-group-item" ng-click="mfgRoute(store.id,store.countryCode)" class="btn btn-alert">{{store.name}} <span class="badge">{{store.countryCode}}</span></a>
+      </ul>
+      <!--<label class="bg-warning">Product Count: {{}}</label>-->
+      <div ng-show="results">
+              <label class="bg-alert">Product Count: {{result.count}}</label>
+              <!--{{result}}-->
+          <ul class="list-group" ng-repeat="result in results">
+              <div ng-repeat="(key,pro) in result.products">
+                  <a ng-href="#/show" ng-click="getProduct(pro.mpid,pro.countryCode)" >
+                  <li class="list-group-item row">
+                      <div class="col-sm-6">
+                          <h1>{{pro.title}}</h1><br/>
+                          <table class="table table-responsive table-hover">
+                              <!--<tr ng-repeat="(key,val) in pro">-->
+                              <!--    <td>{{key}}</td><td>{{val}}</td></p>-->
+                              <!--</tr>-->
+                          </table>
+                      </div>
+                      <!--alert(pro.imageUrl.indexOf("etilize")!= -1);-->
+                      
+                      <img class="col-sm-4" src="{{pro.imageUrl}}" width="160" />
+                  </li>
+                  </a>
+              </div>
+          </ul>
+      </div>
+      
+  </div>
