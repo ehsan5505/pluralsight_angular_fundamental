@@ -137,7 +137,7 @@ app.controller('indixCntr',['$rootScope','$scope','$http',function($rootScope,$s
         // $http.get("https://api.indix.com/v2/catalogStandard/products/d798604eef9fc122a4654a4e6f2f9e31?countryCode=US&app_id=6962a34c&app_key=f01c81c83039781ab934a7b47e48f7a1").success(function(data2){
         
         $http.get($rootScope.query).success(function(data){
-            $scope.viewData = data;
+            // $scope.viewData = data;
             $scope.indix = data;
             $scope.product = $scope.indix.result.product;
             // mpid = $scope.indix.product.mpid;
